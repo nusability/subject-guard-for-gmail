@@ -1,0 +1,35 @@
+input[name="subjectbox"].nsg-missing {
+  box-shadow: 0 0 0 2px #d93025 inset !important;
+  border-radius: 4px;
+  animation: nsg-shake 0.4s ease;
+}
+
+input[name="subjectbox"].nsg-missing::placeholder {
+  color: #d93025 !important;
+}
+
+@keyframes nsg-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+
+.nsg-hint {
+  position: fixed;
+  z-index: 2147483647;
+  background: #d93025;
+  color: #fff;
+  font: 13px/1.4 "Google Sans", Roboto, Arial, sans-serif;
+  padding: 5px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.nsg-hint-visible {
+  opacity: 1;
+}
