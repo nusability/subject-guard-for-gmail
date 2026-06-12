@@ -2,6 +2,8 @@
 
 Chrome extension that blocks sending a Gmail message while the subject line is empty. No settings, no override, no alert dialogs — the subject field just shakes, turns red, gets focused, and a small hint fades away on its own. The hint is localized into 13 languages and follows Gmail's own display language.
 
+**[Install from the Chrome Web Store →](https://chromewebstore.google.com/detail/subject-guard-for-gmail/hbmaccegegcdmkneodeggnnpligdkokl)**
+
 ## Install (development)
 
 1. Run `./build.sh` to generate `src/i18n.js` and the icons.
